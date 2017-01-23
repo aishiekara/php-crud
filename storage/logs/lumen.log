@@ -1,0 +1,372 @@
+[2017-01-23 09:45:30] lumen.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO)' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php:55
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php(55): PDO->__construct('mysql:host=loca...', 'forge', '', Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/MySqlConnector.php(22): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(60): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(49): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(175): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(67): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(171): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(139): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(392): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(100): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#13 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(150): Illuminate\Container\Container->call(Array)
+#14 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 {main}  
+[2017-01-23 09:46:52] lumen.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO)' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php:55
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php(55): PDO->__construct('mysql:host=loca...', 'forge', '', Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/MySqlConnector.php(22): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(60): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(49): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(175): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(67): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(171): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(139): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(392): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(100): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#13 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(150): Illuminate\Container\Container->call(Array)
+#14 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 {main}  
+[2017-01-23 09:47:08] lumen.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO)' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php:55
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php(55): PDO->__construct('mysql:host=loca...', 'forge', '', Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/MySqlConnector.php(22): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(60): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(49): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(175): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(67): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(171): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(139): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(392): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(100): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#13 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(150): Illuminate\Container\Container->call(Array)
+#14 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 {main}  
+[2017-01-23 09:49:04] lumen.ERROR: exception 'RuntimeException' with message 'Too many arguments, expected arguments "command" "name".' in /home/admin/php_lumen_restapi/vendor/symfony/console/Input/ArgvInput.php:182
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/symfony/console/Input/ArgvInput.php(86): Symfony\Component\Console\Input\ArgvInput->parseArgument('\xE2\x80\x93create=posts')
+#1 /home/admin/php_lumen_restapi/vendor/symfony/console/Input/Input.php(59): Symfony\Component\Console\Input\ArgvInput->parse()
+#2 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(219): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}  
+[2017-01-23 09:52:02] lumen.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO)' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php:55
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php(55): PDO->__construct('mysql:host=loca...', 'forge', '', Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/MySqlConnector.php(22): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(60): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(49): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(175): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(67): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(171): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(139): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(392): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(100): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#13 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(150): Illuminate\Container\Container->call(Array)
+#14 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 {main}  
+[2017-01-23 09:52:42] lumen.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO)' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php:55
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php(55): PDO->__construct('mysql:host=loca...', 'forge', '', Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/MySqlConnector.php(22): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(60): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(49): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(175): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(67): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(171): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(139): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(392): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(100): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#13 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(150): Illuminate\Container\Container->call(Array)
+#14 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 {main}  
+[2017-01-23 13:22:44] lumen.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'admin'@'localhost' to database 'php_crud_test'' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php:55
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php(55): PDO->__construct('mysql:host=loca...', 'admin', 'admin', Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/MySqlConnector.php(22): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(60): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(49): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(175): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(67): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(171): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(139): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(392): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(100): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#13 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(150): Illuminate\Container\Container->call(Array)
+#14 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 {main}  
+[2017-01-23 13:29:21] lumen.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'admin'@'localhost' to database 'php_crud_test'' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php:55
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/Connector.php(55): PDO->__construct('mysql:host=loca...', 'admin', 'admin', Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/MySqlConnector.php(22): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(60): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/database/Connectors/ConnectionFactory.php(49): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(175): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 /home/admin/php_lumen_restapi/vendor/illuminate/database/DatabaseManager.php(67): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(171): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/DatabaseMigrationRepository.php(139): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(392): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(100): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#13 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(150): Illuminate\Container\Container->call(Array)
+#14 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 {main}  
+[2017-01-23 13:32:42] lumen.ERROR: exception 'ErrorException' with message 'The use statement with non-compound name 'IlluminateDatabaseSchemaBlueprint' has no effect' in /home/admin/php_lumen_restapi/database/migrations/create_post_table.php:3
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/filesystem/Filesystem.php(68): Laravel\Lumen\Application->Laravel\Lumen\{closure}(2, 'The use stateme...', '/home/admin/php...', 3, Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/filesystem/Filesystem.php(68): Illuminate\Filesystem\Filesystem::requireOnce()
+#2 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(270): Illuminate\Filesystem\Filesystem->requireOnce('/home/admin/php...')
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(83): Illuminate\Database\Migrations\Migrator->requireFiles('/home/admin/php...', Array)
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/admin/php...', false)
+#5 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#6 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#7 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(150): Illuminate\Container\Container->call(Array)
+#8 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 {main}  
+[2017-01-23 13:33:57] lumen.ERROR: exception 'ErrorException' with message 'The use statement with non-compound name 'IlluminateDatabaseSchemaBlueprint' has no effect' in /home/admin/php_lumen_restapi/database/migrations/create_post_table.php:3
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/filesystem/Filesystem.php(68): Laravel\Lumen\Application->Laravel\Lumen\{closure}(2, 'The use stateme...', '/home/admin/php...', 3, Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/filesystem/Filesystem.php(68): Illuminate\Filesystem\Filesystem::requireOnce()
+#2 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(270): Illuminate\Filesystem\Filesystem->requireOnce('/home/admin/php...')
+#3 /home/admin/php_lumen_restapi/vendor/illuminate/database/Migrations/Migrator.php(83): Illuminate\Database\Migrations\Migrator->requireFiles('/home/admin/php...', Array)
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/database/Console/Migrations/MigrateCommand.php(74): Illuminate\Database\Migrations\Migrator->run('/home/admin/php...', false)
+#5 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#6 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#7 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(150): Illuminate\Container\Container->call(Array)
+#8 /home/admin/php_lumen_restapi/vendor/symfony/console/Command/Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /home/admin/php_lumen_restapi/vendor/illuminate/console/Command.php(136): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(843): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(188): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/admin/php_lumen_restapi/vendor/symfony/console/Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/admin/php_lumen_restapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 {main}  
+[2017-01-23 15:04:33] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:53
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:04:59] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:53
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:05:01] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:53
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:05:12] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:53
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:05:48] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:53
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:05:50] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:53
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:05:52] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:53
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:06:08] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:53
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:08:48] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:84
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:09:07] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Post' not found' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:40
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:10:04] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Http\Post' not found' in /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php:40
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:11:18] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function connection() on null' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:3224
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:20:12] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function connection() on null' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:3224
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:20:41] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function connection() on null' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:3224
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:21:00] lumen.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'title' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:424
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php(278): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php(544): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php(40): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: App\Http\Controllers\PostController->createPost(Object(Illuminate\Http\Request))
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#5 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#6 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1376): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#7 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\PostController), 'createPost', Array)
+#8 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#9 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#10 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1215): Laravel\Lumen\Application->handleFoundRoute(Array)
+#11 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#13 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#14 /home/admin/php_lumen_restapi/public/index.php(28): Laravel\Lumen\Application->run()
+#15 /home/admin/php_lumen_restapi/server.php(12): require_once('/home/admin/php...')
+#16 {main}  
+[2017-01-23 15:21:36] lumen.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'title' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:424
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php(278): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php(544): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php(40): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: App\Http\Controllers\PostController->createPost(Object(Illuminate\Http\Request))
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#5 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#6 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1376): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#7 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\PostController), 'createPost', Array)
+#8 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#9 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#10 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1215): Laravel\Lumen\Application->handleFoundRoute(Array)
+#11 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#13 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#14 /home/admin/php_lumen_restapi/public/index.php(28): Laravel\Lumen\Application->run()
+#15 /home/admin/php_lumen_restapi/server.php(12): require_once('/home/admin/php...')
+#16 {main}  
+[2017-01-23 15:21:53] lumen.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'title' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:424
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php(278): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php(544): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php(40): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: App\Http\Controllers\PostController->createPost(Object(Illuminate\Http\Request))
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#5 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#6 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1376): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#7 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\PostController), 'createPost', Array)
+#8 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#9 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#10 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1215): Laravel\Lumen\Application->handleFoundRoute(Array)
+#11 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#13 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#14 /home/admin/php_lumen_restapi/public/index.php(28): Laravel\Lumen\Application->run()
+#15 /home/admin/php_lumen_restapi/server.php(12): require_once('/home/admin/php...')
+#16 {main}  
+[2017-01-23 15:22:07] lumen.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'title' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:424
+Stack trace:
+#0 /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php(278): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php(544): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 /home/admin/php_lumen_restapi/app/Http/Controllers/PostController.php(40): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: App\Http\Controllers\PostController->createPost(Object(Illuminate\Http\Request))
+#4 /home/admin/php_lumen_restapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#5 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#6 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1376): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#7 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\PostController), 'createPost', Array)
+#8 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#9 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#10 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1215): Laravel\Lumen\Application->handleFoundRoute(Array)
+#11 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#13 /home/admin/php_lumen_restapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#14 /home/admin/php_lumen_restapi/public/index.php(28): Laravel\Lumen\Application->run()
+#15 /home/admin/php_lumen_restapi/server.php(12): require_once('/home/admin/php...')
+#16 {main}  
+[2017-01-23 15:22:26] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function connection() on null' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:3224
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:22:53] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Illuminate\Database\Eloquent' not found' in /home/admin/php_lumen_restapi/app/Post.php:6
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:23:19] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function connection() on null' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:3224
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:28:29] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function connection() on null' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:3224
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:34:21] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function connection() on null' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:3224
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2017-01-23 15:34:28] lumen.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function connection() on null' in /home/admin/php_lumen_restapi/vendor/illuminate/database/Eloquent/Model.php:3224
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
